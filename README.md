@@ -10,3 +10,11 @@ When you use the StatRep LaTeX package, you follow a four-step process to create
 1. Compile the LaTeX file a second time to pull the SAS outputs back into the PDF.
 
 The main advantage of this system is that you don't have to worry about your SAS code and outputs being out of sync. Because the SAS code is embedded within the document, it's definitely going to be the same code that generated your outputs. 
+
+SAS documentation for the StatRep package can be located [here](http://support.sas.com/rnd/app/papers/statrep.html). Or, if you want a more streamlined (but less complete) version of how to use StatRep, continue reading. 
+
+## Install MiKTeX
+
+There are a lot of different versions of the TeX language. It is recommended that you install [MikTeX](https://miktex.org/download). 
+
+Once this software has been installed, open the file xxx. 
