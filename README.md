@@ -84,9 +84,10 @@ There are a lot of little details in what follows. Move slowly.
    1. This should generate some folders with output (`lst`, `png`).
 1. Compile the TEX file a second time.
    1. This should pull the `lst` and `png` outputs into the PDF file.
+   1. Sometimes you have to compile an extra time to get the png labels to line up right. I do not know why. Just click the button twice and get over it.
 
 <a name="Example SESUG Paper"/>
 
 # Example SESUG Paper
 
-An example TEX file is included in this repository. The file includes lots of customizations that are useful for SESUG formatting requirements. There are too many customizations to explain them all. Just make yourself a local copy and start editing away.
+An example TEX file is included in this repository. The file includes lots of customizations that are useful for SESUG formatting requirements. There are too many customizations to explain them all. Just make yourself a local copy and start editing away. Be sure to modify the 3rd line to correspond to where you save the TEX file.

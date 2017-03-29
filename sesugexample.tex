@@ -1,0 +1,177 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%% name       : sesugexample.tex
+%% description: SESUG paper with LaTeX
+%% author     : Shane Rosanbalm
+%% date       : 2017-03-29
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\documentclass[10pt,oneside]{article}
+\usepackage{statrep}
+\def\SRrootdir{H:/statrep/sesugexample}
+\newcommand\DocTitleShort{Catchy Title}
+\newcommand\DocHeaderRight{SESUG yyyy}
+\newcommand\DocPaperNumber{Paper XX-nn}
+\title{Catchy Title}
+\author{Pants McSassy}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\usepackage{fancyhdr}
+\pagestyle{fancy}
+\lhead{}%MUST HAVE reassignment on page 2 for SESUG style
+\chead{}
+\rhead{\DocHeaderRight}
+\cfoot{\thepage}
+\renewcommand{\headrulewidth}{0pt}
+%%% end.fancyhdr
+%%% set font to Helvetica :: MS Arial
+%%% https://www.fonts.com/content/learning/fyti/typefaces/arial-vs-helvetica
+\renewcommand{\rmdefault}{phv}%Adobe Helvetica san-serif
+\renewcommand{\sfdefault}{phv}%Adobe Helvetica
+\renewcommand{\ttdefault}{pcr}%Courier          monospace
+\setcounter{secnumdepth}{-1}%turn off numbering of headings
+\usepackage[none]{hyphenat}
+%%%%Guide to LaTex, 4e; pg 51
+\addtolength\textheight{\topmargin}%remove space at top
+\addtolength\textheight{\topmargin}%remove space at bottom
+\setlength{\topmargin} {0pt}
+\addtolength\textwidth{\hoffset}%move margin left
+\addtolength\textwidth{\oddsidemargin}%move margin left
+\setlength{\oddsidemargin}{0pt}
+\addtolength\textwidth{\evensidemargin}%move margin right
+\setlength{\evensidemargin}{0pt}
+%%%
+\setlength\headwidth{\textwidth}%fancyhdr variable
+%%%
+\setlength{\parindent}     {0pt}   %paragraph indent
+\setlength{\parskip}       {1.0ex plus 0.125ex minus 0.125ex}
+\newcommand{\SASregistered}%
+           {SAS\textsuperscript{\scriptsize\textregistered}\ }
+\newcommand{\SASisRegisteredTrademark}%
+           {SAS and all other SAS Institute Inc. product or service %
+            names are registered trademarks or trademarks of %
+            SAS Institute Inc. In the USA and other countries. %®
+            \textregistered\/ indicates USA registration.}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%book: The LaTeX Web Companion, Goossens and Rahtz, pg 43, 64, 65
+\usepackage[bookmarks=false]{hyperref}%SGF style guide
+\begin{document}%
+\pdfcompresslevel=9%best compression level for text and image
+%% replacment for \maketitle %%%%%%%%%%%
+\begin{center}%
+\makeatletter%necessary for \@title and \@author
+\fontsize{10}{18}\selectfont{\bf\DocPaperNumber\\}\medskip
+\fontsize{14}{18}\selectfont{\bf\@title        \\}\medskip
+\fontsize{12}{14}\selectfont{   \@author         }\medskip
+\makeatother
+\end{center}
+%%%end.maketitle
+
+\section*{Abstract}
+
+This is an abstract. Sometimes an abstract will contain little bits of code: \texttt{data=sashelp.cars}. Of course, you don't have to have code in \textit{your} abstract. 
+
+\section{Background}
+
+Another section. Blah blah blah.
+Another section. Blah blah blah.
+Another section. Blah blah blah.
+Another section. Blah blah blah.
+Another section. Blah blah blah.
+
+\section{Next Section}
+
+More explanatory text. Followed by a semi-hardcoded paragraph spacing.
+
+\vspace{3mm}
+Here comes some code that the StatRep macro is going to use. The modifier \texttt{[program]} means that the code will show up in the SAS program but not in the PDF. The modifier \texttt{[store=basic]} means that the output that gets generated will be named \texttt{basic}.
+
+\begin{Sascode}[program]
+options nodate nonumber;
+ods graphics / height=4in;
+\end{Sascode}
+
+\begin{Sascode}[store=basics]
+proc sgplot data=sashelp.class;
+   scatter y=weight x=height;
+run;
+\end{Sascode}
+
+\vspace{5mm}
+Getting the header to look different on page 2 is a bit of a kludge. You have to ask for a "newpage". So, be careful where you put this line in your TEX file.
+
+%%best to use a New-Page before the Left-Head command:
+\newpage
+\lhead{\DocTitleShort, continued}%SESUG 2016
+
+\Graphic[store=basics,
+   objects=SGPlot,
+   caption={A Basic Scatter Plot}
+   ]{basics}
+
+\section{Macro Parameters}
+
+Now we create a table. 
+
+\vspace{1mm}
+\begin{tabular}{|l|l|}
+\hline
+Parameter & Description \\ \hline
+\texttt{data=} & Input dataset. \\ \hline
+\texttt{var=} & Space-separated list of variables to plot. \\ \hline
+\end{tabular} \\
+
+Now we create a slightly more complex table with multiple lines of text within once cell. You accomplish this by nesting one "begin tabular" within another. 
+
+\vspace{1mm}
+\begin{tabular}{|l|l|}
+\hline
+Parameter & Description \\ \hline
+\texttt{data=} & \begin{tabular}{@{}l@{}} Input dataset. \\ Required. \end{tabular} \\ \hline
+\texttt{var=} & \begin{tabular}{@{}l@{}} Space-separated list of variables to plot. \\ Required. \end{tabular} \\ \hline
+\end{tabular} \\
+
+\section{Customization}
+
+Sometimes you don't like the way LaTeX paginates, so you force it to do things your way.
+
+\newpage
+
+Here comes some code that we are going to show in the paper, but we don't want it to be added to the program. That is accomplished with the modifier \texttt{[display]}
+
+\begin{Sascode}[display]
+ods graphics / imagename = "junk";
+
+proc sgplot data=junk;
+   scatterplot y=junk x=yard / group=dog;
+run;
+\end{Sascode}
+
+\section{Source Code}
+
+You can include real working URLs in your paper.
+
+\url{https://github.com}
+
+\section{References}
+
+Off the Beaten Path: Creating Unusual Graphs with GTL, Prashant Hebbar, SAS Global Forum 2012 \\
+\url{https://support.sas.com/resources/papers/proceedings12/267-2012.pdf}
+
+\section{Contact Information}
+
+Your comments and questions are valued and encouraged.
+
+Contact the author(s):
+
+\begin{tabular}[t]{rl}
+Name               & Pants McSassy                    \\
+Enterprise         & Independent Contractor           \\
+City, State, ZIP   & Somewhere in the desert          \\
+E-mail:            & \url{mailto:pmcsassy@gmail.com}  \\
+GitHub:            & \url{https://github.com}         \\
+\end{tabular}
+
+\vfill
+\SASisRegisteredTrademark%macro variable provided by sugconf.cls
+
+%\OtherTrademarks%macro variable provided by sugconf.cls
+\end{document}
