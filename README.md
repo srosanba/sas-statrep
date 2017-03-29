@@ -18,9 +18,9 @@ SAS documentation for the StatRep package can be located [here](http://support.s
 To get started with LaTeX you need to install two different pieces of software.
 
 1. [MikTeX](https://miktex.org/download)
-   This is the basic LaTeX software for Windows.
+   1. This is the basic LaTeX software for Windows.
 1. [TexMaker](http://www.xm1math.net/texmaker/download.html)
-   This is an editor that makes it easier to edit LaTeX documents.
+   1. This is an editor that makes it easier to edit LaTeX documents.
 
 Once both pieces of software have been installed, you'll want to go to YouTube and watch one of Michelle Krummel's *excellent* tutorials. Start with [LaTeX Tutorial 1](https://www.youtube.com/watch?v=SoDv0qhyysQ). This is a quick way to gain basic familiarity with what LaTeX code looks like and how to interact with the software.
 
