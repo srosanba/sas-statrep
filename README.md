@@ -39,7 +39,7 @@ Once both pieces of software have been installed, you'll want to go to YouTube a
 
 ## Getting Started with StatRep
 
-The download link for the StatRep package is located [here](http://support.sas.com/rnd/app/papers/statrep.html). Look for the link titled **LaTeX package**.
+The download link for the StatRep package is located [here](http://support.sas.com/rnd/app/papers/statrep.html). Look for the link titled **_LaTeX package_**.
 
 There are two pieces to the StatRep package: the SAS components and the LaTeX components. These two pieces have separate setup requirements. 
 
