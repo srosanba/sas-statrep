@@ -24,12 +24,15 @@ SAS documentation for the StatRep package can be located [here](http://support.s
 
 <a name="Getting Started with LaTeX"/>
 
-## Getting Started with LaTeX
+## Getting Started with LaTeX (~30 minutes)
 
 To get started with LaTeX you need to install two different pieces of software.
 
 1. [MikTeX](https://miktex.org/download)
    1. This is the basic LaTeX software for Windows.
+   1. During the install, change the following.
+      1. Preferred paper = **Letter**
+      1. Install missing packages on-the-fly = **Yes**
 1. [TexMaker](http://www.xm1math.net/texmaker/download.html)
    1. This is an editor that makes it easier to edit LaTeX documents.
 
@@ -37,7 +40,7 @@ Once both pieces of software have been installed, you'll want to go to YouTube a
 
 <a name="Getting Started with StatRep"/>
 
-## Getting Started with StatRep
+## Getting Started with StatRep (~15 minutes)
 
 The download link for the StatRep package is located [here](http://support.sas.com/rnd/app/papers/statrep.html). Look for the link titled **_LaTeX package_**.
 
