@@ -28,6 +28,8 @@ SAS documentation for the StatRep package can be located [here](http://support.s
 
 # Getting Started with LaTeX (~30 minutes)
 
+LaTeX, which is pronounced `Lah-tech` or `Lay-tech` (to rhyme with `blech` or `Bertolt Brecht`), is a document preparation system for high-quality typesetting. It is most often used for medium-to-large technical or scientific documents but it can be used for almost any form of publishing.
+
 1. Install [MikTeX](https://miktex.org/download) (~5 minutes)
    1. This is the basic LaTeX software for Windows.
    1. During the install, change the following.
@@ -71,18 +73,18 @@ There are a lot of little details in what follows. Move slowly.
 
 ### Use StatRep (~5 minutes)
 
-1. Create a `github` folder under `H:/statrep` and copy `quickstart.tex` into this location.
-   1. Thus creating `H:/statrep/github/quickstart.tex`.
+1. Create a `myfirstpaper` folder under `H:/statrep` and copy `quickstart.tex` into this location.
+   1. Thus creating `H:/statrep/myfirstpaper/quickstart.tex`.
 1. Double-click to open `quickstart.tex` in TexMaker.
-1. Insert a new line 3 that reads `\def\SRrootdir{H:/statrep/github}`.
+1. Insert a new line 3 that reads `\def\SRrootdir{H:/statrep/myfirstpaper}`.
    1. This line lets `statrep_macros.sas` know where to save things.
-1. Compile the TEX file.
-   1. This should create several files in `H:/statrep/github`.
+1. Compile the LaTeX file.
+   1. This should create several files in `H:/statrep/myfirstpaper`.
       1. Examine `quickstart.pdf`. Note the placeholders such as `Missing File lst/tsta.lst`.
       1. Examine `quickstart_SR.sas`. Stare in amazement.
 1. Run `quickstart_SR.sas` using Enterprise Guide (does not seem to work in batch).
    1. This should generate some folders with output (`lst`, `png`).
-1. Compile the TEX file a second time.
+1. Compile the LaTeX file a second time.
    1. This should pull the `lst` and `png` outputs into the PDF file.
    1. Sometimes you have to compile an extra time to get the png labels to line up right. I do not know why. Just click the button twice and get over it.
 
@@ -90,4 +92,4 @@ There are a lot of little details in what follows. Move slowly.
 
 # Example SESUG Paper
 
-An example TEX file is included in this repository. The file includes lots of customizations that are useful for SESUG formatting requirements. There are too many customizations to explain them all. Just make yourself a local copy and start editing away. Be sure to modify the 3rd line to correspond to where you save the TEX file.
+An example LaTeX file is included in this repository. The file includes lots of customizations that are useful for SESUG formatting requirements. There are too many customizations to explain them all. Just make yourself a local copy and start editing away. Be sure to modify the 3rd line to correspond to where you save the LaTeX file.
