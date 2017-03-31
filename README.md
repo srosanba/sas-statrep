@@ -49,13 +49,13 @@ LaTeX, which is pronounced `Lah-tech` or `Lay-tech`, is a document preparation s
 
 # Getting Started with StatRep (~20 minutes)
 
-The download link for the StatRep package is located [here](http://support.sas.com/rnd/app/papers/statrep.html). Look for the link titled **_LaTeX package_**.
+The download link for the StatRep package is located [here](http://support.sas.com/rnd/app/papers/statrep.html). Look for **_LaTeX package_**. Extract the contents of `statrep.zip` to a convenient location. 
 
 There are a lot of little details in what follows. Move slowly.
 
 ### Install SAS components (~2 minutes)
 
-1. Extract the contents of `statrep.zip`. Copy the file `statrep_macros.sas` into a directory from which it can be accessed by the SAS Grid. For instance, `H:/statrep` would be a good choice.
+1. Copy the file `statrep_macros.sas` into a directory from which it can be accessed by the SAS Grid. For instance, `H:/statrep` would be a good choice.
 
 ### Install LaTeX components (~10 minutes)
 
