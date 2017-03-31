@@ -22,7 +22,12 @@ When you use the StatRep LaTeX package, you follow a four-step process to create
 
 The main advantage of this system is that you don't have to worry about your SAS code and outputs being out of sync. Because the SAS code is embedded within the document, it's definitely going to be the same code that generated your outputs.
 
-SAS documentation for the StatRep package can be located [here](http://support.sas.com/rnd/app/papers/statrep.html). Or, if you want a more streamlined (but less complete) version of how to use StatRep, continue reading.
+You have three options for getting started with StatRep. 
+
+1. Full blown SAS documentation can be located [here](http://support.sas.com/rnd/app/papers/statrep.html). 
+1. A slightly gentler introduction can be found in the SGF paper found [here](http://support.sas.com/resources/papers/proceedings12/324-2012.pdf).
+1. Or, gentlest of all, are the instructions that follow.
+   1. Estimated time to install software, learn syntax, and produce your first output: ~50 minutes.
 
 <a name="Getting Started with LaTeX"/>
 
