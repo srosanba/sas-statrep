@@ -49,7 +49,7 @@ LaTeX, which is pronounced `Lah-tech` or `Lay-tech`, is a document preparation s
 
 # Getting Started with StatRep (~20 minutes)
 
-StatRep is not software in the traditional sense. It is actually just a collection of files that need to be saved in just the right place and edited in just the right way so that TexMaker and SAS can work together to produce your documents. Download the ZIP file by clicking [here](http://support.sas.com/rnd/app/papers/statrep/statrep.zip). 
+StatRep is not software in the traditional sense. It is actually just a collection of files that need to be saved in just the right place and edited in just the right way so that TexMaker and SAS can work together to produce your documents. Download the ZIP file by clicking [here](http://support.sas.com/rnd/app/papers/statrep/statrep.zip). For now, save and extract the contents of the ZIP file to any convenient location. 
 
 There are a lot of little details in what follows. Move slowly.
 
