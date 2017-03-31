@@ -99,5 +99,7 @@ There are a lot of little details in what follows. Move slowly.
 
 An [example LaTeX file](https://github.com/srosanba/sas-statrep/blob/master/sesugexample.tex), and the [PDF that it generates](https://github.com/srosanba/sas-statrep/blob/master/sesugexample.pdf), are included in this repository. The file includes lots of customizations that are useful for SESUG formatting requirements. There are too many customizations to explain them all. Just make yourself a local copy and start editing away. When doing so, be sure to:
 
-1. save the LaTeX file in a separate folder from any other StatRep project, and 
-1. modify the 3rd line of the LaTeX file to correspond to this new folder, using forward slashes (`/`) in the folder path. 
+1. Save the LaTeX file in a separate folder from any other StatRep projects you might be working on.
+   1. E.g., `H:/SESUG/2017/bestpaperever`
+1. Modify the 3rd line of the LaTeX file to correspond to this new folder, using forward slashes (`/`) in the folder path. 
+   1. E.g., `\def\SRrootdir{H:/SESUG/2017/bestpaperever}`
