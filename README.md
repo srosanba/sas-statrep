@@ -42,8 +42,11 @@ LaTeX, which is pronounced `Lah-tech` or `Lay-tech`, is a document preparation s
       1. Install missing packages on-the-fly = **Yes**
 1. Install [TexMaker](http://www.xm1math.net/texmaker/download.html) (~5 minutes)
    1. This is an editor that makes it easier to edit LaTeX documents.
+   1. There are two dropdowns at the top of the TexMaker interface. Make sure they are set to `PDFLaTeX` and `View PDF`.
 1. Watch [LaTeX Tutorial 1](https://www.youtube.com/watch?v=SoDv0qhyysQ) (~15 minutes).
-   1. This is a quick way to gain basic familiarity with what LaTeX code looks like and how to interact with the software.
+   1. This is a quick way to gain basic familiarity with LaTeX and TexMaker.
+1. Close TexMaker. 
+   1. During the StatRep setup you are going to be editing some LaTeX configuration files. 
 
 <a name="Getting Started with StatRep"/>
 
