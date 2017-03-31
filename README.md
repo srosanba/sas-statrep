@@ -25,7 +25,7 @@ The main advantage of this system is that you don't have to worry about your SAS
 You have three options for getting started with StatRep. 
 
 1. Full blown SAS documentation can be located [here](http://support.sas.com/rnd/app/papers/statrep.html). 
-1. A slightly gentler introduction can be found in the SGF paper found [here](http://support.sas.com/resources/papers/proceedings12/324-2012.pdf).
+1. Or, a slightly gentler introduction can be found in the SGF paper found [here](http://support.sas.com/resources/papers/proceedings12/324-2012.pdf).
 1. Or, gentlest of all, are the instructions that follow.
    1. Estimated time to install software, learn syntax, and produce your first output: ~50 minutes.
 
