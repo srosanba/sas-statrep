@@ -33,7 +33,7 @@ You have three options for getting started with StatRep.
 
 # Getting Started with LaTeX (~30 minutes)
 
-LaTeX, which is pronounced `Lah-tech` or `Lay-tech`, is a document preparation system for high-quality typesetting. It is most often used for medium-to-large technical or scientific documents but it can be used for almost any form of publishing. For instance, I've recently used it to write a SESUG paper. 
+LaTeX, which is pronounced `Lah-tech` or `Lay-tech`, is a document preparation system for [high-quality typesetting](https://en.wikipedia.org/wiki/LaTeX#Example). It is most often used for medium-to-large technical or scientific documents but it can be used for almost any form of publishing. For instance, I've recently used it to write a SESUG paper. 
 
 1. Install [MikTeX](https://miktex.org/download) (~5 minutes)
    1. This is the basic LaTeX software for Windows.
