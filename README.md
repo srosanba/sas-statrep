@@ -49,7 +49,7 @@ LaTeX, which is pronounced `Lah-tech` or `Lay-tech`, is a document preparation s
 
 # Getting Started with StatRep (~20 minutes)
 
-The download link for the StatRep package is located [here](http://support.sas.com/rnd/app/papers/statrep.html). Look for **_LaTeX package_**. Extract the contents of `statrep.zip` to a convenient location. 
+StatRep is not traditional software. It is a collection of files that need to be saved in just the right place and edited in just the right way so that TexMaker and SAS can work together to produce your documents. Download the ZIP file from [here](http://support.sas.com/rnd/app/papers/statrep.html). 
 
 There are a lot of little details in what follows. Move slowly.
 
