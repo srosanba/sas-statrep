@@ -97,4 +97,4 @@ There are a lot of little details in what follows. Move slowly.
 
 # Example SESUG Paper
 
-An example LaTeX file is included in this repository. The file includes lots of customizations that are useful for SESUG formatting requirements. There are too many customizations to explain them all. Just make yourself a local copy and start editing away. Be sure to modify the 3rd line to correspond to where you save the LaTeX file.
+An [example LaTeX file](https://github.com/srosanba/sas-statrep/blob/master/sesugexample.tex) is included in this repository. The file includes lots of customizations that are useful for SESUG formatting requirements. There are too many customizations to explain them all. Just make yourself a local copy and start editing away. Just be sure to save it in a separate folder from any other StatRep project, and modify the 3rd line to correspond to where you save the example LaTeX file. 
