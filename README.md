@@ -42,7 +42,6 @@ LaTeX, which is pronounced `Lah-tech` or `Lay-tech`, is a document preparation s
       1. Install missing packages on-the-fly = **Yes**
 1. Install [TexMaker](http://www.xm1math.net/texmaker/download.html) (~5 minutes)
    1. This is an editor that makes it easier to edit LaTeX documents.
-   1. There are two dropdowns at the top of the TexMaker interface. Make sure they are set to `PDFLaTeX` and `View PDF`.
 1. Watch [LaTeX Tutorial 1](https://www.youtube.com/watch?v=SoDv0qhyysQ) (~15 minutes).
    1. This is a quick way to gain basic familiarity with LaTeX and TexMaker.
 1. Close TexMaker. 
@@ -84,8 +83,9 @@ There are a lot of little details in what follows. Move slowly.
 1. Create a `myfirstpaper` folder under `H:/statrep` and copy `quickstart.tex` into this location.
    1. Thus creating `H:/statrep/myfirstpaper/quickstart.tex`.
 1. Double-click to open `quickstart.tex` in TexMaker.
-1. Insert a new line 3 that reads `\def\SRrootdir{H:/statrep/myfirstpaper}`.
-   1. This line lets `statrep_macros.sas` know where to save things.
+   1. In the dropdown at the top of the TexMaker interface (between the blue arrows), make sure the value is set to `PDFLaTeX`.
+1. Insert a new line 3 in your LaTeX file that reads `\def\SRrootdir{H:/statrep/myfirstpaper}`.
+   1. This line lets `statrep_macros.sas` know where to save your outputs.
 1. Compile the LaTeX file.
    1. This should create several files in `H:/statrep/myfirstpaper`.
       1. Examine `quickstart.pdf`. Note the placeholders such as `Missing File lst/tsta.lst`.
