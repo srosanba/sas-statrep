@@ -90,7 +90,7 @@ There are a lot of little details in what follows. Move slowly.
       1. Examine `quickstart_SR.sas`. Stare in amazement.
 1. Run `quickstart_SR.sas` using Enterprise Guide (does not seem to work in batch).
    1. This should generate some folders with output (`lst`, `png`).
-   1. If the SAS program crashes, see the [Gotcha]() below.
+   1. If the SAS program crashes, see the [Gotcha](#gotcha) below.
 1. Compile the LaTeX file a second time.
    1. This should pull the `lst` and `png` outputs into the PDF file.
    1. Typically you have to compile an extra time to get the image labels to line up right. I do not know why. Just click the button twice and get over it.
