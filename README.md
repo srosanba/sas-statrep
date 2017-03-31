@@ -90,11 +90,11 @@ There are a lot of little details in what follows. Move slowly.
       1. Examine `quickstart_SR.sas`. Stare in amazement.
 1. Run `quickstart_SR.sas` using Enterprise Guide (does not seem to work in batch).
    1. This should generate some folders with output (`lst`, `png`).
-   1. **Gotcha**: If the SAS program crashes, the likely cause is that the `statrep.cfg` file that you edited in the final step of **Install LaTeX components** is not the copy of the file that TexMaker is looking at (yes, there are multiple copies of this file created in some installs - this makes no sense). To remedy this problem, search `quickstart.log` for the text `statrep.cfg`. If the path you see does not match the one you used above, then you will need to repeat the final step of **Install LaTeX components** (editing `\def\SRmacropath{}`) in the copy of `statrep.cfg` referenced in `quickstart.log`. 
+   1. If the SAS program crashes, see the [Gotcha]() below.
 1. Compile the LaTeX file a second time.
    1. This should pull the `lst` and `png` outputs into the PDF file.
    1. Typically you have to compile an extra time to get the image labels to line up right. I do not know why. Just click the button twice and get over it.
-
+   
 <a name="Example SESUG Paper"/>
 
 # Example SESUG Paper
@@ -105,3 +105,7 @@ An [example LaTeX file](https://github.com/srosanba/sas-statrep/blob/master/sesu
    1. E.g., `H:/SESUG/2017/bestpaperever`
 1. Modify the 3rd line of the LaTeX file to correspond to this new folder, using forward slashes (`/`) in the folder path. 
    1. E.g., `\def\SRrootdir{H:/SESUG/2017/bestpaperever}`
+
+# Gotcha
+
+If the SAS program crashes in step 5 of **Use StatRep**, the likely cause is that the `statrep.cfg` file that you edited in the final step of **Install LaTeX components** is not the copy of the file that TexMaker is looking at (yes, there are multiple copies of this file created in some installs - this makes no sense). To remedy this problem, search `quickstart.log` for the text `statrep.cfg`. If the path you see does not match the one you used above, then you will need to repeat the final step of **Install LaTeX components** (editing `\def\SRmacropath{}`) in the copy of `statrep.cfg` referenced in `quickstart.log`. 
