@@ -60,7 +60,8 @@ There are a lot of little details in what follows. Move slowly.
 
 ### Install SAS components (~2 minutes)
 
-1. Copy the file `statrep_macros.sas` into a directory from which it can be accessed by the SAS Grid. For instance, `H:/statrep` would be a good choice.
+1. Copy the file `statrep_macros.sas` into a directory from which it can be accessed by the SAS Grid. 
+   1. For instance, `H:/statrep` would be a good choice.
 
 ### Install LaTeX components (~10 minutes)
 
