@@ -36,10 +36,12 @@ You have three options for getting started with StatRep.
 LaTeX, which is pronounced `Lah-tech` or `Lay-tech`, is a document preparation system for [high-quality typesetting](https://en.wikipedia.org/wiki/LaTeX#Example). It is most often used for medium-to-large technical or scientific documents but it can be used for almost any form of publishing. For instance, I've recently used it to write a SESUG paper. 
 
 1. Install [MikTeX](https://miktex.org/download) (~5 minutes)
+   1. This is a large file. The download will take longer than the install.
    1. This is the basic LaTeX software for Windows.
    1. During the install, change the following.
       1. Preferred paper = **Letter**
       1. Install missing packages on-the-fly = **Yes**
+         1. This allows the software to automatically search for updates and install them without prompting you for permission. This is a good thing. 
 1. Install [TexMaker](http://www.xm1math.net/texmaker/download.html) (~5 minutes)
    1. This is an editor that makes it easier to edit LaTeX documents.
 1. Watch [LaTeX Tutorial 1](https://www.youtube.com/watch?v=SoDv0qhyysQ) (~15 minutes).
@@ -69,10 +71,10 @@ There are a lot of little details in what follows. Move slowly.
    1. Likely here: `C:/Users/<user>/AppData/Roaming/MiKTeX/2.9/tex`
 1. Under the `tex` folder, create subdirectories for `latex/statrep`.
    1. Thus forming `C:/Users/<user>/AppData/Roaming/MiKTeX/2.9/tex/latex/statrep`
-1. Copy the following files into this new `statrep` folder.
+1. Copy the following files (found at the top level of `statrep.zip`) into this new `statrep` folder.
    1. `statrep.dtx`
    1. `statrep.ins`
-1. From a command prompt, navigate to the `statrep` folder.
+1. Open a command prompt, then navigate to the `statrep` folder.
    1. E.g., `cd C:/Users/<user>/AppData/Roaming/MiKTeX/2.9/tex/latex/statrep`
 1. Enter the command `pdftex statrep.ins`.
    1. This should have created, at a minimum, `statrep.cfg`.
@@ -84,7 +86,9 @@ There are a lot of little details in what follows. Move slowly.
 
 ### Use StatRep (~5 minutes)
 
-1. Create a `myfirstpaper` folder under `H:/statrep` and copy `quickstart.tex` into this location.
+1. Create a `myfirstpaper` folder under `H:/statrep`.  
+   1. Thus creating `H:/statrep/myfirstpaper/quickstart.tex`.
+1. Copy `quickstart.tex` (found in the `doc` folder of `statrep.zip`) into this new `myfirstpaper` folder.
    1. Thus creating `H:/statrep/myfirstpaper/quickstart.tex`.
 1. Double-click to open `quickstart.tex` in TexMaker.
    1. In the dropdown at the top of the TexMaker interface (between the blue arrows), make sure the value is set to `PDFLaTeX`.
