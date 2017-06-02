@@ -71,7 +71,7 @@ There are a lot of little details in what follows. Move slowly.
    1. Likely here: `C:/Users/<user>/AppData/Roaming/MiKTeX/2.9/tex`
 1. Under the `tex` folder, create subdirectories for `latex/statrep`.
    1. Thus forming `C:/Users/<user>/AppData/Roaming/MiKTeX/2.9/tex/latex/statrep`
-1. Copy the following files (found at the top level of `statrep.zip`) into this new `statrep` folder.
+1. Copy the following files into this new `statrep` folder.
    1. `statrep.dtx`
    1. `statrep.ins`
 1. Open a command prompt, then navigate to the `statrep` folder.
